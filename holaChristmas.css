@@ -1,0 +1,154 @@
+body{
+    background:linear-gradient(#3A6CB1, #AFD1DD, #F2FAFE 580px);
+    min-height:100vh;
+    overflow:hidden;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:before, 
+:after{
+    content:'';
+    position:absolute;
+}
+.jd-scene{
+    position:relative;
+    width:100%;
+    height:100vh;
+}
+.jd-content{
+    width:100%;
+    height:580px;
+}
+.jd-sun{
+    width:162px;
+    height:162px;
+    position:absolute;
+    border-radius:50%;
+    background:#FFF;
+    right:100px;
+    top:150px;
+    box-shadow:0 0 80px 20px #fff;
+    animation:sun_pulse 2s ease-in-out infinite;
+}
+@keyframes sun_pulse{
+    0%{
+        box-shadow:0 0 80px 20px #D9E2E5;
+    }
+    50%{
+        box-shadow:0 0 80px 15px #D9E2E5;
+    }
+    100%{
+        box-shadow:0 0 80px 20px #D9E2E5;
+    }
+}
+
+.santa {
+background: url(https://img.xatblog.net/image/tjlHCE9d.gif) no-repeat right;
+background-size: 240px;
+background-position-y: 30px;
+padding-top: 0px;
+height: 145px;
+right: 0;
+text-align: right;
+}
+
+.tree {
+background: url(https://img.xatblog.net/image/shGmy1kh.png)bottom center;
+padding: 0;
+height: 145px;
+-moz-animation: bgscroll 370s infinite linear;
+-ms-animation: bgscroll 370s infinite linear;
+-o-animation: bgscroll 370s infinite linear;
+-webkit-animation: bgscroll 370s infinite linear;
+}
+
+.jd-topwrap {
+    color: #F2FAFE;
+    background:url(https://img.xatblog.net/image/HxnnRA.png) top center repeat-x;
+    padding: 0;
+    margin:0;
+    height: 165px;
+    border-bottom: 0 solid #333;
+    margin: auto auto;
+    vertical-align: middle;
+}
+
+
+.jd-topwrap {
+-moz-animation: bgscroll 750s infinite linear;
+-ms-animation: bgscroll 750s infinite linear;
+-o-animation: bgscroll 750s infinite linear;
+-webkit-animation: bgscroll 750s infinite linear;
+}
+/* BEGIN ANIMATIONS */
+
+@-webkit-keyframes bgscroll {
+	from {background-position: 0 0;}
+	to {background-position: -9999px 0;}
+}
+
+@-moz-keyframes bgscroll {
+	from {background-position: 0 0;}
+	to {background-position: -9999px 0;}
+}
+
+@-ms-keyframes bgscroll {
+	from {background-position: 0 0;}
+	to {background-position: -9999px 0;}
+}
+
+@-o-keyframes bgscroll {
+	from {background-position: 0 0;}
+	to {background-position: -9999px 0;}
+}
+
+@keyframes bgscroll {
+	from {background-position: 0 0;}
+	to {background-position: -9999px 0;}
+}
+
+.rotate{-webkit-transition-duration:.8s;
+  -moz-transition-duration:.8s;
+  -o-transition-duration:.8s;
+  transition-duration:.8s;
+  -webkit-transition-property:-webkit-transform;
+  -moz-transition-property:-moz-transform;
+  -o-transition-property:-o-transform;
+  transition-property:transform;
+  overflow:hidden;
+}
+
+.rotate:hover{
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg)
+}
+
+
+.wrap{
+  width: 95%;
+  min-width: 1150px;
+  max-width: 1200px;
+  margin:0 auto;
+  text-align:left
+}
+
+@media screen and (min-width: 920px){
+    body{
+        background:linear-gradient(#3A6CB1, #AFD1DD, #F2FAFE 450px);
+    }
+    .jd-content{
+        height:450px;
+    }
+}
+@media screen and (min-width: 1920px){
+    body{
+        background:linear-gradient(#3A6CB1, #AFD1DD, #F2FAFE 580px);
+    }
+    .jd-content{
+        height:580px;
+    }
+}
